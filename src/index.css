@@ -33,8 +33,19 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  @apply text-5xl !text-slate-900;
+}
+
+h2 {
+ @apply text-xl !text-slate-900;
+}
+
+h1, h2, h3 {
+  color: #0e0e0e;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 button {
@@ -59,7 +70,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: rgba(240, 230, 230, 0.3);
+    background-color: rgba(180, 160, 140, 0.3);
   }
   a:hover {
     color: #747bff;
