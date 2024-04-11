@@ -6,6 +6,10 @@ import LinkedInSocial from "../components/LinkedInSocial"
 import GithubSocial from "../components/GithubSocial"
 import InfoSection from "../components/InfoSection"
 import Degree from "../components/Degree"
+import CV from "../components/CV"
+import Interests from "../components/Interests"
+import Contact from "../components/Contact"
+import Skill from "../components/Skill"
 
 const ComponentList = [
     {
@@ -16,8 +20,9 @@ const ComponentList = [
         functions: [
             "onToggle"
         ],
+        tag: "",
         gridData: { 
-            x: 6, 
+            x: 5, 
             y: 1, 
             w: 1, 
             h: 1,
@@ -34,8 +39,9 @@ const ComponentList = [
         functions: [
             "onToggle"
         ],
+        tag: "",
         gridData: {
-            x: 5, 
+            x: 4, 
             y: 1, 
             w: 1, 
             h: 1,
@@ -52,12 +58,14 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "",
         gridData: {
-            x: 3, 
+            x: 2, 
             y: 0, 
             w: 4, 
             h: 1,
-            minW: 3
+            minW: 4,
+            maxH: 2
         },
         id: 3
     },
@@ -69,8 +77,9 @@ const ComponentList = [
         functions: [
             "onToggle"
         ],
+        tag: "",
         gridData: { 
-            x: 4, 
+            x: 3, 
             y: 1, 
             w: 1, 
             h: 1,
@@ -87,8 +96,9 @@ const ComponentList = [
         functions: [
             "onToggle"
         ],
+        tag: "",
         gridData: { 
-            x: 3, 
+            x: 2, 
             y: 1, 
             w: 1, 
             h: 1,
@@ -105,8 +115,9 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "",
         gridData: { 
-            x: 1, 
+            x: 0, 
             y: 0, 
             w: 2, 
             h: 2,
@@ -123,9 +134,10 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "Contact",
         gridData: { 
-            x: 1, 
-            y: 2, 
+            x: 7, 
+            y: 0, 
             w: 1, 
             h: 1,
             minH: 1,
@@ -141,9 +153,10 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "Contact",
         gridData: { 
-            x: 2, 
-            y: 2, 
+            x: 7, 
+            y: 1, 
             w: 1, 
             h: 1,
             minH: 1,
@@ -162,8 +175,9 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "About",
         gridData: { 
-            x: 3, 
+            x: 0, 
             y: 2, 
             w: 3, 
             h: 2,
@@ -183,6 +197,7 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "About",
         gridData: { 
             x: 3, 
             y: 2, 
@@ -204,14 +219,15 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "About",
         gridData: { 
             x: 3, 
             y: 4, 
             w: 2, 
-            h: 3,
+            h: 2,
             minH: 2,
-            minW: 1,
-            maxH: 4,
+            minW: 2,
+            maxH: 3,
             maxW: 2
         },
         id: 11
@@ -225,17 +241,303 @@ const ComponentList = [
         },
         functions: [
         ],
+        tag: "About",
         gridData: { 
             x: 5, 
             y: 4, 
             w: 2, 
-            h: 3,
+            h: 2,
             minH: 2,
-            minW: 1,
-            maxH: 4,
+            minW: 2,
+            maxH: 3,
             maxW: 2
         },
         id: 12
+    },
+    {
+        component: CV,
+        props: {
+        },
+        functions: [
+        ],
+        tag: "",
+        gridData: { 
+            x: 6, 
+            y: 0, 
+            w: 1, 
+            h: 1,
+            minH: 1,
+            minW: 1,
+            maxH: 2,
+            maxW: 2
+        },
+        id: 13
+    },
+    {
+        component: Interests,
+        props: {
+        },
+        functions: [
+        ],
+        tag: "About",
+        gridData: { 
+            x: 0, 
+            y: 4, 
+            w: 2, 
+            h: 3,
+            minH: 3,
+            minW: 2,
+            maxH: 5,
+            maxW: 2
+        },
+        id: 14
+    },
+    {
+        component: Contact,
+        props: {
+        },
+        functions: [
+        ],
+        tag: "Contact",
+        gridData: { 
+            x: 0, 
+            y: 3, 
+            w: 3, 
+            h: 1,
+            minH: 1,
+            minW: 3,
+            maxH: 2,
+            maxW: 4
+        },
+        id: 15
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "html",
+            color: "text-blue-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 0, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 16
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "css",
+            color: "text-orange-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 1, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 17
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "javascript",
+            color: "text-yellow-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 2, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 18
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "react",
+            color: "text-blue-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 3, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 19
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "node",
+            color: "text-green-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 4, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 20
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "java",
+            color: "text-gray-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 5, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 21
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "python",
+            color: "text-blue-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 6, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 22
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "php",
+            color: "text-slate-900"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 7, 
+            y: 2, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 23
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "laravel",
+            color: "text-red-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 0, 
+            y: 3, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 24
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "mongodb",
+            color: "text-green-700"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 1, 
+            y: 3, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 25
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "mysql",
+            color: "text-blue-900"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 2, 
+            y: 3, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 26
+    },
+    {
+        component: Skill,
+        props: {
+            icon: "docker",
+            color: "text-blue-500"
+        },
+        functions: [
+        ],
+        tag: "Skills",
+        gridData: { 
+            x: 3, 
+            y: 3, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 27
     },
 ]
 
