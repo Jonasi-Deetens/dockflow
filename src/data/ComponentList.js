@@ -10,6 +10,7 @@ import CV from "../components/CV"
 import Interests from "../components/Interests"
 import Contact from "../components/Contact"
 import Skill from "../components/Skill"
+import DarkMode from "../components/DarkMode"
 
 const ComponentList = [
     {
@@ -538,6 +539,23 @@ const ComponentList = [
             maxW: 1
         },
         id: 27
+    },
+    {
+        component: DarkMode,
+        props: {
+        },
+        functions: [
+        ],
+        tag: "",
+        gridData: { 
+            x: 7, 
+            y: 0, 
+            w: 1, 
+            h: 1,
+            maxH: 1,
+            maxW: 1
+        },
+        id: 28
     },
 ]
 

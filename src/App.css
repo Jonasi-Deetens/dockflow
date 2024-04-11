@@ -17,7 +17,7 @@
 }
 
 .grid-container {
-  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  position: relative;
   overflow: hidden;  
 }
 
@@ -32,4 +32,10 @@
   background: green;
   transform: rotate(-45deg);
   transform-origin: bottom right;
+}
+
+.dark {
+  .react-grid-placeholder {
+    @apply !bg-gray-400;
+  }
 }

@@ -18,8 +18,13 @@ const Home = () => {
         }
     };
 
+    const toggleMode = (active) => {
+        console.log(active)
+    }
+
     const functionNames = {
-        onToggle
+        onToggle,
+        toggleMode
     }
 
     return (
@@ -44,7 +49,7 @@ const Home = () => {
 
                     return (
                         (activeTabs.includes(tag) || tag == "") && 
-                            <div key={id} data-grid={gridData} className='flex items-center justify-center rounded-3xl bg-neutral-100 z-10 hover:shadow-md hover:cursor-grab active:shadow-lg active:cursor-grabbing active:z-20'>
+                            <div key={id} data-grid={gridData} className='grid-item flex items-center justify-center rounded-3xl bg-neutral-100 z-10 hover:shadow-md hover:cursor-grab active:shadow-lg active:cursor-grabbing active:z-20'>
                                 <Component {...props} {...functionProps}/>
                             </div>
                     )
