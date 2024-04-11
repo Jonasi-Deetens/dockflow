@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import GridLayout from 'react-grid-layout'
+import {Responsive, WidthProvider} from 'react-grid-layout'
 import ComponentList from '../data/ComponentList'
+
+const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const Home = () => {
     const [activeTabs, setActiveTabs] = useState([]);
@@ -29,11 +31,11 @@ const Home = () => {
 
     return (
         <main className='min-h-svh flex items-center'>
-            <GridLayout
+            <ResponsiveGridLayout
                 className='layout mx-auto my-20'
-                cols={8}
-                rowHeight={150}
-                width={1200}
+                breakpoints={{ lg: 1000, md: 900, sm: 768, xs: 480, xxs: 0 }}
+                cols={{ lg: 8, md: 6, sm: 6, xs: 4, xxs: 2 }}
+                //rowHeight={150}
             >
                 { ComponentList.map((item) => {
                     const { component: Component, props, functions, id, gridData, tag} = item;
@@ -54,7 +56,7 @@ const Home = () => {
                             </div>
                     )
                 })}
-            </GridLayout> 
+            </ResponsiveGridLayout> 
         </main>
     )
 }

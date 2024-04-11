@@ -21,7 +21,7 @@ const DarkMode = () => {
                 { active ? 
                     <MdLightMode className='text-yellow-500' />
                     :
-                    <MdDarkMode />
+                    <MdDarkMode className='text-black'/>
                 }
             </div>
         </div>
