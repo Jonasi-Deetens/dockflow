@@ -552,8 +552,8 @@ const ComponentList = [
             y: 0, 
             w: 1, 
             h: 1,
-            maxH: 1,
-            maxW: 1
+            maxH: 2,
+            maxW: 2
         },
         id: 28
     },
