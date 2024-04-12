@@ -11,6 +11,7 @@ import Interests from "../components/Interests"
 import Contact from "../components/Contact"
 import Skill from "../components/Skill"
 import DarkMode from "../components/DarkMode"
+import Map from "../components/Map"
 
 const ComponentList = [
     {
@@ -556,6 +557,24 @@ const ComponentList = [
             maxW: 2
         },
         id: 28
+    },
+    {
+        component: Map,
+        props: {
+            position: [51.335, 3.24]
+        },
+        functions: [
+        ],
+        tag: "",
+        gridData: { 
+            x: 6, 
+            y: 1, 
+            w: 2, 
+            h: 2,
+            maxH: 2,
+            maxW: 2
+        },
+        id: 29
     },
 ]
 

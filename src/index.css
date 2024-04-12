@@ -50,26 +50,19 @@
   }
 
   button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
+    @apply bg-neutral-50 rounded-full p-5 w-10 h-10 flex items-center justify-center font-bold text-lg;
+    z-index: 400;
   }
   button:hover {
-    border-color: #646cff;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    @apply border-2 border-green-300 transition-all duration-75;
   }
 
   .react-resizable-handle {
     @apply !right-2 !bottom-2;
+  }
+
+  .react-resizable-handle::after {
+    @apply !z-50;
   }
 }
 
