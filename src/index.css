@@ -7,7 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: rgba(180, 160, 140, 0.3);
+  background-color: rgba(230, 210, 200, 0.4);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -41,7 +41,7 @@
     @apply text-xl !text-slate-900;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, button {
     color: #0e0e0e;
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
@@ -50,11 +50,13 @@
   }
 
   button {
-    @apply bg-neutral-50 rounded-full p-5 w-10 h-10 flex items-center justify-center font-bold text-lg;
-    z-index: 400;
+    @apply bg-neutral-50 rounded-full  w-10 h-10 flex items-center justify-center font-bold text-lg;
   }
   button:hover {
-    @apply border-2 border-green-300 transition-all duration-75;
+    @apply border-2 border-green-300 transition-all duration-300;
+  }
+  .map-button {
+    z-index: 400;
   }
 
   .react-resizable-handle {

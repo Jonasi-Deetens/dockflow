@@ -2,6 +2,7 @@ import ToggleableItem from "../components/ToggleableItem"
 import Title from "../components/Title"
 import Image from "../components/Image"
 import me from "../assets/me.jpg"
+import weatherApp from "../assets/weather-app.png"
 import LinkedInSocial from "../components/LinkedInSocial"
 import GithubSocial from "../components/GithubSocial"
 import InfoSection from "../components/InfoSection"
@@ -12,6 +13,7 @@ import Contact from "../components/Contact"
 import Skill from "../components/Skill"
 import DarkMode from "../components/DarkMode"
 import Map from "../components/Map"
+import Project from "../components/Project"
 
 const ComponentList = [
     {
@@ -74,7 +76,7 @@ const ComponentList = [
     {
         component: ToggleableItem,
         props: {
-            title: "Project"
+            title: "Projects"
         },
         functions: [
             "onToggle"
@@ -567,14 +569,34 @@ const ComponentList = [
         ],
         tag: "",
         gridData: { 
-            x: 6, 
-            y: 1, 
+            x: 0, 
+            y: 2, 
             w: 2, 
             h: 2,
             maxH: 2,
             maxW: 2
         },
         id: 29
+    },
+    {
+        component: Project,
+        props: {
+            name: "weather-app",
+            image: weatherApp,
+            alt: "A screenshot of the mobile look of a weather app project"
+        },
+        functions: [
+        ],
+        tag: "Projects",
+        gridData: { 
+            x: 0, 
+            y: 2, 
+            w: 2, 
+            h: 4,
+            maxH: 4,
+            maxW: 2
+        },
+        id: 30
     },
 ]
 

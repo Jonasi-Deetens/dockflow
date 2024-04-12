@@ -21,10 +21,10 @@ const ZoomControls = () => {
 
   return (
     <div className="absolute flex bottom-0 px-2 h-12 w-full justify-between">
-      <button onClick={zoomOut} className="">
+      <button onClick={zoomOut} className="map-button">
         -
       </button>
-      <button onClick={zoomIn} className="">
+      <button onClick={zoomIn} className="map-button">
         +
       </button>
     </div>
