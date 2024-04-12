@@ -49,6 +49,20 @@
   @apply w-96 h-96 absolute rounded-full -bottom-32 -left-32;
 }
 
+.project-plothive {
+  @apply rounded-3xl relative;
+  background-color: #e9f5b2;
+
+  img {
+    @apply w-3/4 h-2/3 rounded-3xl shadow-lg rotate-12 absolute -right-10 top-24;
+  }
+}
+
+.project-plothive::before {
+  content: "";
+  background-color: #f5c6d7;
+  @apply w-96 h-96 absolute rounded-full -bottom-32 -left-32;
+}
 
 /* DARK MODE */
 /*  -----------------------------------------  */

@@ -3,6 +3,7 @@ import Title from "../components/Title"
 import Image from "../components/Image"
 import me from "../assets/me.jpg"
 import weatherApp from "../assets/weather-app.png"
+import plothiveApp from "../assets/plothive.png"
 import LinkedInSocial from "../components/LinkedInSocial"
 import GithubSocial from "../components/GithubSocial"
 import InfoSection from "../components/InfoSection"
@@ -589,7 +590,7 @@ const ComponentList = [
         ],
         tag: "Projects",
         gridData: { 
-            x: 0, 
+            x: 6, 
             y: 2, 
             w: 2, 
             h: 4,
@@ -597,6 +598,26 @@ const ComponentList = [
             maxW: 2
         },
         id: 30
+    },
+    {
+        component: Project,
+        props: {
+            name: "plothive",
+            image: plothiveApp,
+            alt: "A screenshot of the project website about writing books"
+        },
+        functions: [
+        ],
+        tag: "Projects",
+        gridData: { 
+            x: 3, 
+            y: 2, 
+            w: 4, 
+            h: 2,
+            maxH: 4,
+            maxW: 4
+        },
+        id: 31
     },
 ]
 
