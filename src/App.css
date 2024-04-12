@@ -36,32 +36,42 @@
 
 .project-weather-app {
   @apply rounded-3xl relative;
-  background-color: #6ed2b6;
-
+  background-color: #dde0f8;
+  
   img {
-    @apply w-3/4 h-2/3 rounded-3xl shadow-lg border border-black rotate-12 absolute -left-10 top-32;
+    @apply w-3/4 h-2/3 rounded-3xl shadow-lg outline outline-2 outline-black rotate-12 absolute -left-10 top-32;
   }
 }
 
 .project-weather-app::before {
   content: "";
-  background-color: #f5c6d7;
+  background-color: #6ed2b6;
   @apply w-96 h-96 absolute rounded-full -bottom-32 -left-32;
 }
 
 .project-plothive {
   @apply rounded-3xl relative;
-  background-color: #e9f5b2;
+  background-color: #dde0f8;
 
   img {
-    @apply w-3/4 h-2/3 rounded-3xl shadow-lg rotate-12 absolute -right-10 top-24;
+    width: 400px;
+    height: 200px;
+    @apply rounded-3xl shadow-lg rotate-12 absolute -right-10 top-24;
   }
 }
 
 .project-plothive::before {
   content: "";
   background-color: #f5c6d7;
-  @apply w-96 h-96 absolute rounded-full -bottom-32 -left-32;
+  @apply w-96 h-48 absolute rounded-full -bottom-24 -left-32;
+}
+
+.stretch-button p {
+  @apply opacity-0 transition-all duration-0 w-0;
+}
+
+.stretch-button:hover p {
+  @apply opacity-100 px-2 duration-500 w-fit;
 }
 
 /* DARK MODE */

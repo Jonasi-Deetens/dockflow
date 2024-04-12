@@ -3,8 +3,8 @@ import { MdAdsClick } from "react-icons/md";
 
 const StretchButton = ({ title }) => {
   return (
-    <button className="hover:w-48 transition-all duration-700 justify-between">
-      <p className="hidden hover:block">{title}</p>
+    <button className="stretch-button hover:w-auto p-2 transition-all duration-1000 justify-between">
+      <p>{title}</p>
       <MdAdsClick size={20} />
     </button>
   );

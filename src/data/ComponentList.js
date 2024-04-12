@@ -584,7 +584,8 @@ const ComponentList = [
         props: {
             name: "weather-app",
             image: weatherApp,
-            alt: "A screenshot of the mobile look of a weather app project"
+            alt: "A screenshot of the mobile look of a weather app project",
+            link: "https://jonasideetens-weather-app.netlify.app/"
         },
         functions: [
         ],
@@ -604,7 +605,8 @@ const ComponentList = [
         props: {
             name: "plothive",
             image: plothiveApp,
-            alt: "A screenshot of the project website about writing books"
+            alt: "A screenshot of the project website about writing books",
+            link: "https://plothive.netlify.app/"
         },
         functions: [
         ],
