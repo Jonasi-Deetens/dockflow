@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import ComponentList from "../data/ComponentList";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -34,9 +33,8 @@ const Home = () => {
     <main className="min-h-svh flex items-center">
       <ResponsiveGridLayout
         className="layout mx-auto my-20"
-        breakpoints={{ lg: 1000, md: 900, sm: 768, xs: 480, xxs: 0 }}
-        cols={{ lg: 8, md: 6, sm: 6, xs: 4, xxs: 2 }}
-        //rowHeight={150}
+        breakpoints={{ lg: 1000, md: 768, sm: 700, xs: 480, xxs: 100 }}
+        cols={{ lg: 8, md: 8, sm: 6, xs: 4, xxs: 4 }}
       >
         {ComponentList.map((item) => {
           const {
@@ -62,7 +60,7 @@ const Home = () => {
               <div
                 key={id}
                 data-grid={gridData}
-                className="grid-item flex items-center justify-center rounded-3xl bg-neutral-100 z-10 hover:shadow-md hover:cursor-grab active:shadow-lg active:cursor-grabbing active:z-20"
+                className="grid-item flex items-center justify-center rounded-3xl bg-neutral-50 z-10 hover:shadow-md hover:cursor-grab active:shadow-lg active:cursor-grabbing active:z-20"
               >
                 <Component {...props} {...functionProps} />
               </div>
@@ -70,17 +68,6 @@ const Home = () => {
           );
         })}
       </ResponsiveGridLayout>
-      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[51.505, -0.09]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-      </MapContainer>
     </main>
   );
 };

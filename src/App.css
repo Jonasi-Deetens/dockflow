@@ -9,7 +9,8 @@
 }
 
 .layout {
-  width: 1200px;
+  @apply w-10/12 md:w-2/3 lg:w-full;
+  max-width: 1075px;
 }
 
 .react-grid-placeholder {
