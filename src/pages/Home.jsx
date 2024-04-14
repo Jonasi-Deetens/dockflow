@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import ComponentList from "../data/ComponentList";
+import FilterBar from "../components/FilterBar";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -30,9 +31,10 @@ const Home = () => {
   };
 
   return (
-    <main className="min-h-svh flex items-center">
+    <main className="min-h-svh flex flex-col items-center">
+      <FilterBar handleToggle={onToggle} />
       <ResponsiveGridLayout
-        className="layout mx-auto my-20"
+        className="layout mx-auto mb-20"
         breakpoints={{ lg: 1000, md: 768, sm: 700, xs: 480, xxs: 100 }}
         cols={{ lg: 8, md: 8, sm: 6, xs: 4, xxs: 4 }}
       >

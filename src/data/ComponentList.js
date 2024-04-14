@@ -18,44 +18,6 @@ import Project from "../components/Project"
 
 const ComponentList = [
     {
-        component: ToggleableItem,
-        props: {
-            title: "About"
-        },
-        functions: [
-            "onToggle"
-        ],
-        tag: "",
-        gridData: { 
-            x: 5, 
-            y: 1, 
-            w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
-        },
-        id: 1
-    },
-    {
-        component: ToggleableItem,
-        props: {
-            title: "Contact"
-        },
-        functions: [
-            "onToggle"
-        ],
-        tag: "",
-        gridData: {
-            x: 4, 
-            y: 1, 
-            w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
-        },
-        id: 2
-    },
-    {
         component: Title,
         props: {
             title: "Welcome,",
@@ -73,44 +35,6 @@ const ComponentList = [
             maxH: 2
         },
         id: 3
-    },
-    {
-        component: ToggleableItem,
-        props: {
-            title: "Projects"
-        },
-        functions: [
-            "onToggle"
-        ],
-        tag: "",
-        gridData: { 
-            x: 3, 
-            y: 1, 
-            w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
-        },
-        id: 4
-    },
-    {
-        component: ToggleableItem,
-        props: {
-            title: "Skills"
-        },
-        functions: [
-            "onToggle"
-        ],
-        tag: "",
-        gridData: { 
-            x: 2, 
-            y: 1, 
-            w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
-        },
-        id: 5
     },
     {
         component: Image,

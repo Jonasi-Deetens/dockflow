@@ -8,7 +8,7 @@ const ToggleableItem = ({ title, onToggle }) => {
 
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
-      <h2 className="font-bold">{title}</h2>
+      <p className="font-bold">{title}</p>
       <br />
       <ToggleButton onToggle={handleToggle} />
     </div>
