@@ -10,12 +10,6 @@ const FilterBar = ({ handleToggle }) => {
           <ToggleableItem title="Skills" onToggle={handleToggle} />
         </li>
         <li className="mx-5">
-          <ToggleableItem title="Projects" onToggle={handleToggle} />
-        </li>
-        <li className="mx-5">
-          <ToggleableItem title="Contact" onToggle={handleToggle} />
-        </li>
-        <li className="mx-5">
           <ToggleableItem title="About" onToggle={handleToggle} />
         </li>
       </ul>

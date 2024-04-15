@@ -27,12 +27,10 @@ const ComponentList = [
         ],
         tag: "",
         gridData: {
-            x: 2, 
+            x: 1, 
             y: 0, 
-            w: 4, 
-            h: 1,
-            minW: 4,
-            maxH: 2
+            w: 2, 
+            h: 1
         },
         id: 3
     },
@@ -48,12 +46,8 @@ const ComponentList = [
         gridData: { 
             x: 0, 
             y: 0, 
-            w: 2, 
-            h: 2,
-            minH: 2,
-            minW: 2,
-            maxH: 2,
-            maxW: 2
+            w: 1, 
+            h: 1
         },
         id: 6
     },
@@ -63,16 +57,12 @@ const ComponentList = [
         },
         functions: [
         ],
-        tag: "Contact",
+        tag: "",
         gridData: { 
-            x: 7, 
-            y: 0, 
+            x: 2, 
+            y: 3, 
             w: 1, 
-            h: 1,
-            minH: 1,
-            minW: 1,
-            maxH: 2,
-            maxW: 2
+            h: 1
         },
         id: 7
     },
@@ -82,16 +72,12 @@ const ComponentList = [
         },
         functions: [
         ],
-        tag: "Contact",
+        tag: "",
         gridData: { 
-            x: 7, 
-            y: 1, 
+            x: 1, 
+            y: 3, 
             w: 1, 
-            h: 1,
-            minH: 1,
-            minW: 1,
-            maxH: 2,
-            maxW: 2
+            h: 1
         },
         id: 8
     },
@@ -107,13 +93,9 @@ const ComponentList = [
         tag: "About",
         gridData: { 
             x: 0, 
-            y: 2, 
-            w: 3, 
-            h: 2,
-            minH: 2,
-            minW: 2,
-            maxH: 3,
-            maxW: 4
+            y: 4, 
+            w: 2, 
+            h: 1,
         },
         id: 9
     },
@@ -128,14 +110,10 @@ const ComponentList = [
         ],
         tag: "About",
         gridData: { 
-            x: 3, 
-            y: 2, 
-            w: 4, 
-            h: 2,
-            minH: 2,
-            minW: 3,
-            maxH: 6,
-            maxW: 4
+            x: 2, 
+            y: 4, 
+            w: 2, 
+            h: 2
         },
         id: 10
     },
@@ -150,14 +128,10 @@ const ComponentList = [
         ],
         tag: "About",
         gridData: { 
-            x: 3, 
-            y: 4, 
-            w: 2, 
-            h: 2,
-            minH: 2,
-            minW: 2,
-            maxH: 3,
-            maxW: 2
+            x: 0, 
+            y: 5, 
+            w: 1, 
+            h: 1,
         },
         id: 11
     },
@@ -172,14 +146,10 @@ const ComponentList = [
         ],
         tag: "About",
         gridData: { 
-            x: 5, 
-            y: 4, 
-            w: 2, 
-            h: 2,
-            minH: 2,
-            minW: 2,
-            maxH: 3,
-            maxW: 2
+            x: 1, 
+            y: 5, 
+            w: 1, 
+            h: 1,
         },
         id: 12
     },
@@ -191,14 +161,10 @@ const ComponentList = [
         ],
         tag: "",
         gridData: { 
-            x: 6, 
-            y: 0, 
+            x: 0, 
+            y: 1, 
             w: 1, 
-            h: 1,
-            minH: 1,
-            minW: 1,
-            maxH: 2,
-            maxW: 2
+            h: 1
         },
         id: 13
     },
@@ -208,16 +174,12 @@ const ComponentList = [
         },
         functions: [
         ],
-        tag: "About",
+        tag: "",
         gridData: { 
             x: 0, 
-            y: 4, 
-            w: 2, 
-            h: 3,
-            minH: 3,
-            minW: 2,
-            maxH: 5,
-            maxW: 2
+            y: 2, 
+            w: 1, 
+            h: 2
         },
         id: 14
     },
@@ -227,16 +189,12 @@ const ComponentList = [
         },
         functions: [
         ],
-        tag: "Contact",
+        tag: "",
         gridData: { 
-            x: 0, 
-            y: 3, 
-            w: 3, 
-            h: 1,
-            minH: 1,
-            minW: 3,
-            maxH: 2,
-            maxW: 4
+            x: 1, 
+            y: 2, 
+            w: 2, 
+            h: 1
         },
         id: 15
     },
@@ -251,11 +209,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 0, 
-            y: 2, 
+            y: 4, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 16
     },
@@ -270,7 +226,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 1, 
-            y: 2, 
+            y: 4, 
             w: 1, 
             h: 1,
             maxH: 1,
@@ -289,11 +245,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 2, 
-            y: 2, 
+            y: 4, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 18
     },
@@ -308,11 +262,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 3, 
-            y: 2, 
+            y: 4, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 19
     },
@@ -326,12 +278,10 @@ const ComponentList = [
         ],
         tag: "Skills",
         gridData: { 
-            x: 4, 
-            y: 2, 
+            x: 0, 
+            y: 5, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 20
     },
@@ -345,12 +295,10 @@ const ComponentList = [
         ],
         tag: "Skills",
         gridData: { 
-            x: 5, 
-            y: 2, 
+            x: 1, 
+            y: 5, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 21
     },
@@ -364,12 +312,10 @@ const ComponentList = [
         ],
         tag: "Skills",
         gridData: { 
-            x: 6, 
-            y: 2, 
+            x: 2, 
+            y: 5, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 22
     },
@@ -383,12 +329,10 @@ const ComponentList = [
         ],
         tag: "Skills",
         gridData: { 
-            x: 7, 
-            y: 2, 
+            x: 3, 
+            y: 5, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 23
     },
@@ -403,11 +347,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 0, 
-            y: 3, 
+            y: 6, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 24
     },
@@ -422,11 +364,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 1, 
-            y: 3, 
+            y: 6, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 25
     },
@@ -441,11 +381,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 2, 
-            y: 3, 
+            y: 6, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 26
     },
@@ -460,11 +398,9 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 3, 
-            y: 3, 
+            y: 6, 
             w: 1, 
-            h: 1,
-            maxH: 1,
-            maxW: 1
+            h: 1
         },
         id: 27
     },
@@ -476,12 +412,10 @@ const ComponentList = [
         ],
         tag: "",
         gridData: { 
-            x: 7, 
-            y: 0, 
+            x: 3, 
+            y: 3, 
             w: 1, 
-            h: 1,
-            maxH: 2,
-            maxW: 2
+            h: 1
         },
         id: 28
     },
@@ -494,12 +428,10 @@ const ComponentList = [
         ],
         tag: "",
         gridData: { 
-            x: 0, 
-            y: 2, 
-            w: 2, 
-            h: 2,
-            maxH: 2,
-            maxW: 2
+            x: 3, 
+            y: 0, 
+            w: 1, 
+            h: 1
         },
         id: 29
     },
@@ -513,14 +445,12 @@ const ComponentList = [
         },
         functions: [
         ],
-        tag: "Projects",
+        tag: "",
         gridData: { 
-            x: 6, 
-            y: 2, 
-            w: 2, 
-            h: 4,
-            maxH: 4,
-            maxW: 2
+            x: 3, 
+            y: 1, 
+            w: 1, 
+            h: 2
         },
         id: 30
     },
@@ -534,14 +464,12 @@ const ComponentList = [
         },
         functions: [
         ],
-        tag: "Projects",
+        tag: "",
         gridData: { 
-            x: 3, 
-            y: 2, 
-            w: 4, 
-            h: 2,
-            maxH: 4,
-            maxW: 4
+            x: 1, 
+            y: 1, 
+            w: 2, 
+            h: 1
         },
         id: 31
     },

@@ -35,8 +35,9 @@ const Home = () => {
       <FilterBar handleToggle={onToggle} />
       <ResponsiveGridLayout
         className="layout mx-auto mb-20"
-        breakpoints={{ lg: 1000, md: 768, sm: 700, xs: 480, xxs: 100 }}
-        cols={{ lg: 8, md: 8, sm: 6, xs: 4, xxs: 4 }}
+        breakpoints={{ lg: 1200, md: 1000, sm: 768, xs: 480, xxs: 320 }}
+        cols={{ lg: 4, md: 4, sm: 4, xs: 2, xxs: 2 }}
+        rowHeight={300}
       >
         {ComponentList.map((item) => {
           const {
