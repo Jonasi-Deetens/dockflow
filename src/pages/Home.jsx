@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import ComponentList from "../data/ComponentList";
 import FilterBar from "../components/FilterBar";
+import Layouts from "../data/layouts";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -18,6 +19,7 @@ const Home = () => {
       } else {
         setHeight(300);
       }
+      console.log(Layouts);
     }
 
     window.addEventListener("resize", handleResize);
@@ -48,9 +50,11 @@ const Home = () => {
       <FilterBar handleToggle={onToggle} />
       <ResponsiveGridLayout
         className="layout mx-auto mb-20"
+        layouts={Layouts}
         breakpoints={{ lg: 1200, md: 1000, sm: 768, xs: 480, xxs: 320 }}
         cols={{ lg: 4, md: 4, sm: 4, xs: 2, xxs: 2 }}
         rowHeight={height}
+        isResizable={false}
       >
         {ComponentList.map((item) => {
           const {
@@ -75,7 +79,7 @@ const Home = () => {
             (activeTabs.includes(tag) || tag == "") && (
               <div
                 key={id}
-                data-grid={gridData}
+                // data-grid={gridData}
                 className="grid-item flex items-center justify-center rounded-3xl bg-neutral-50 z-10 hover:shadow-md hover:cursor-grab active:shadow-lg active:cursor-grabbing active:z-20"
               >
                 <Component {...props} {...functionProps} />
