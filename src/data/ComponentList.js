@@ -209,7 +209,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 0, 
-            y: 4, 
+            y: 6, 
             w: 1, 
             h: 1
         },
@@ -226,7 +226,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 1, 
-            y: 4, 
+            y: 6, 
             w: 1, 
             h: 1,
             maxH: 1,
@@ -245,7 +245,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 2, 
-            y: 4, 
+            y: 6, 
             w: 1, 
             h: 1
         },
@@ -262,7 +262,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 3, 
-            y: 4, 
+            y: 6, 
             w: 1, 
             h: 1
         },
@@ -279,7 +279,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 0, 
-            y: 5, 
+            y: 7, 
             w: 1, 
             h: 1
         },
@@ -296,7 +296,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 1, 
-            y: 5, 
+            y: 7, 
             w: 1, 
             h: 1
         },
@@ -313,7 +313,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 2, 
-            y: 5, 
+            y: 7, 
             w: 1, 
             h: 1
         },
@@ -330,7 +330,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 3, 
-            y: 5, 
+            y: 7, 
             w: 1, 
             h: 1
         },
@@ -347,7 +347,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 0, 
-            y: 6, 
+            y: 8, 
             w: 1, 
             h: 1
         },
@@ -364,7 +364,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 1, 
-            y: 6, 
+            y: 8, 
             w: 1, 
             h: 1
         },
@@ -381,7 +381,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 2, 
-            y: 6, 
+            y: 8, 
             w: 1, 
             h: 1
         },
@@ -398,7 +398,7 @@ const ComponentList = [
         tag: "Skills",
         gridData: { 
             x: 3, 
-            y: 6, 
+            y: 8, 
             w: 1, 
             h: 1
         },

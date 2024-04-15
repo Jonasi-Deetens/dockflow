@@ -15,7 +15,7 @@ const Project = ({ name, image, alt, link }) => {
         href={link}
         rel="noopener noreferrer"
       >
-        <StretchButton title={name} />
+        <StretchButton title={name} action="click" />
       </a>
     </div>
   );

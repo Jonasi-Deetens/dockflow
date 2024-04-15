@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import ComponentList from "../data/ComponentList";
 import FilterBar from "../components/FilterBar";
@@ -7,6 +7,24 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const Home = () => {
   const [activeTabs, setActiveTabs] = useState([]);
+  const [height, setHeight] = useState(300);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 420) {
+        setHeight(160);
+      } else if (window.innerWidth < 600) {
+        setHeight(200);
+      } else {
+        setHeight(300);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const onToggle = (tag, active) => {
     if (active) setActiveTabs([...activeTabs, tag]);
@@ -21,13 +39,8 @@ const Home = () => {
     }
   };
 
-  const toggleMode = (active) => {
-    console.log(active);
-  };
-
   const functionNames = {
     onToggle,
-    toggleMode,
   };
 
   return (
@@ -37,7 +50,7 @@ const Home = () => {
         className="layout mx-auto mb-20"
         breakpoints={{ lg: 1200, md: 1000, sm: 768, xs: 480, xxs: 320 }}
         cols={{ lg: 4, md: 4, sm: 4, xs: 2, xxs: 2 }}
-        rowHeight={300}
+        rowHeight={height}
       >
         {ComponentList.map((item) => {
           const {

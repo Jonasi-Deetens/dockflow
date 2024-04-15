@@ -75,14 +75,14 @@
   }
   
   .github {
-    @apply invert;
+    @apply text-neutral-50 bg-transparent;
   }
 
-  .project-weather-app {
+  .project-weather-app, .project-plothive {
     background-color: transparent;
   }
 
-  .project-weather-app::before {
+  .project-weather-app::before, .project-plothive::before {
     content: "";
     background-color: transparent;
   }
