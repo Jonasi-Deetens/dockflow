@@ -12,10 +12,10 @@ const Home = () => {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 420) {
+      if (window.innerWidth < 480) {
         setHeight(160);
-      } else if (window.innerWidth < 600) {
-        setHeight(200);
+      } else if (window.innerWidth < 768) {
+        setHeight(220);
       } else {
         setHeight(300);
       }
@@ -50,8 +50,9 @@ const Home = () => {
       <FilterBar handleToggle={onToggle} />
       <ResponsiveGridLayout
         className="layout mx-auto mb-20"
+        isBounded={true}
         layouts={Layouts}
-        breakpoints={{ lg: 1200, md: 1000, sm: 768, xs: 480, xxs: 320 }}
+        breakpoints={{ lg: 1200, md: 1000, sm: 768, xs: 500, xxs: 320 }}
         cols={{ lg: 4, md: 4, sm: 4, xs: 2, xxs: 2 }}
         rowHeight={height}
         isResizable={false}
