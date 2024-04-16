@@ -45,7 +45,7 @@
   }
 
   button {
-    @apply bg-neutral-50 rounded-full w-10 h-10 outline-none duration-500 flex items-center justify-center font-bold text-lg;
+    @apply bg-neutral-50 rounded-full w-6 sm:w-10 h-6 sm:h-10 outline-none duration-500 flex items-center justify-center font-bold text-lg;
   }
   button:hover {
     @apply  transition-all duration-500 shadow-neutral-50 outline outline-2;

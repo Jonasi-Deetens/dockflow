@@ -14,34 +14,34 @@ const Interests = () => {
       <hr className="mb-5" />
       <ul className="text-left w-full p-2">
         <li className="flex items-center justify-between my-3">
-          <FaCode className="text-slte-900 lg:w-6 lg:h-6" />
+          <FaCode className="text-slte-900 hidden sm:block lg:w-6 lg:h-6" />
           <p>Coding</p>
         </li>
         <li className="flex items-center justify-between my-3">
-          <GiMountainClimbing className="text-gray-500 lg:w-6 lg:h-6" />
+          <GiMountainClimbing className="text-gray-500 hidden sm:block lg:w-6 lg:h-6" />
           <p>Bouldering</p>
         </li>
         <li className="flex items-center justify-between my-3">
-          <MdOutlineBakeryDining className="text-amber-700 lg:w-6 lg:h-6" />
+          <MdOutlineBakeryDining className="text-amber-700 hidden sm:block lg:w-6 lg:h-6" />
           <p>Baking</p>
         </li>
         <li className="flex items-center justify-between my-3">
-          <MdSunny className="text-orange-500 lg:w-6 lg:h-6" />
+          <MdSunny className="text-orange-500 hidden sm:block lg:w-6 lg:h-6" />
           <p>Sun & Beach</p>
         </li>
       </ul>
-      <hr />
-      <ul className="text-left w-full p-2">
-        <li className="flex items-center justify-between my-3">
-          <FaReact className="text-blue-500 lg:w-6 lg:h-6" />
+      <hr className="hidden sm:block" />
+      <ul className="text-left w-full p-2 hidden sm:block">
+        <li className="flex items-center justify-between my-0 sm:my-3">
+          <FaReact className="text-blue-500 hidden sm:block lg:w-6 lg:h-6" />
           <p>React</p>
         </li>
-        <li className="flex items-center justify-between my-3">
-          <FaNode className="text-green-500 lg:w-6 lg:h-6" />
+        <li className="flex items-center justify-between my-0 sm:my-3">
+          <FaNode className="text-green-500 hidden sm:block lg:w-6 lg:h-6" />
           <p>NodeJs</p>
         </li>
-        <li className="flex items-center justify-between my-3">
-          <FaDocker className="text-blue-500 lg:w-6 lg:h-6" />
+        <li className="flex items-center justify-between my-0 sm:my-3">
+          <FaDocker className="text-blue-500 hidden sm:block lg:w-6 lg:h-6" />
           <p>Docker</p>
         </li>
       </ul>

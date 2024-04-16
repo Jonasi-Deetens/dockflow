@@ -12,14 +12,15 @@ const Home = () => {
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 480) {
-        setHeight(160);
+      if (window.innerWidth < 300) {
+        setHeight(120);
+      } else if (window.innerWidth < 480) {
+        setHeight(150);
       } else if (window.innerWidth < 768) {
         setHeight(220);
       } else {
         setHeight(300);
       }
-      console.log(Layouts);
     }
 
     window.addEventListener("resize", handleResize);
@@ -49,6 +50,7 @@ const Home = () => {
     <main className="min-h-svh flex flex-col items-center">
       <FilterBar handleToggle={onToggle} />
       <ResponsiveGridLayout
+      key={activeTabs}
         className="layout mx-auto mb-20"
         isBounded={true}
         layouts={Layouts}
@@ -56,6 +58,7 @@ const Home = () => {
         cols={{ lg: 4, md: 4, sm: 4, xs: 2, xxs: 2 }}
         rowHeight={height}
         isResizable={false}
+        isDraggable={false}
       >
         {ComponentList.map((item) => {
           const {
